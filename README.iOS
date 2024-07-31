@@ -1,6 +1,13 @@
-To build DarkPlaces for iOS, you need to extract this zip into the source folder:
-http://ghdigital.com/~havoc/SDLiOS20110208.zip
+Status:
+Buildable using Xcode 12.4 and below(maybe even above, feel free to try)
+Was tested on iOS 15.8.2(iPhone SE 1-st gen)
+Recommended to sideload this with TrollStore, Xcode sideloads giving some weird effects(but game still pretty usable with that).
 
-This is built from the in-development version of SDL 1.3, to make an updated include folder and libSDL*.a files, you need to get the SDL 1.3 source (from hg or a nightly build or whatever), then simply open Xcode-iPhoneOS/SDL/SDLiPhoneOS.xcodeproj and build libSDL for both simulator and device and then the SDL Application xcode template.
+This repository does not provide any Quake data, you must own game to use this engine.
+You must place .pak files to id1 folder in sources, make sure files named in lowercase, engine is case-sensitive.
 
-Then copy the include folder and two libSDL*.a files from the Xcode-iPhoneOS/SDL/build/Debug-template (or Release-template) into the darkplaces source folder, and it will build with your updated files.
+Issues:
+Little unusual movement controls/aiming.
+Saving/Loading not implemented(but buttons there, i hope to implement this later).
+Only one button to switch weapons, because MWHEELDOWN bind is not working.
+Settings not being saved.
