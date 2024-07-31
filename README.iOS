@@ -5,6 +5,8 @@ Recommended to sideload this with TrollStore, Xcode sideloads giving some weird 
 
 This repository does not provide any Quake data, you must own game to use this engine.
 You must place .pak files to id1 folder in sources, make sure files named in lowercase, engine is case-sensitive.
+You should import icons to your .pak file, because by default engine has no visible touch controls. You may find them in "icons" directory in this repository.
+These icons was drawn by me, if you don't like them, feel free to replace them(however make sure they in .tga format, i'm not sure if engine can read something more common).
 
 Issues:
 Little unusual movement controls/aiming.
